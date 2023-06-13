@@ -8,81 +8,85 @@
 import SwiftUI
 
 struct ProfileView: View {
+    
+    private let gridItems: [GridItem] = [
+        .init(.flexible(), spacing: 1),
+        .init(.flexible(), spacing: 1),
+        .init(.flexible(), spacing: 1)
+    ]
+    
     var body: some View {
-        VStack {
-            // header
-            VStack {
-                // profilePicture, status
-                HStack {
-                    Image("cat")
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: 80, height: 80)
-                        .clipShape(Circle())
-                    
-                Spacer()
-                    // post, follower, following Status
-                    HStack(spacing: 8) {
-                        VStack {
-                            Text("3")
-                                .font(.subheadline)
-                                .fontWeight(.semibold)
-                            
-                            Text("Post")
-                                .font(.footnote)
-                        }
-                        // make frame to make spaces
-                        .frame(width: 76)
+        NavigationStack {
+            ScrollView {
+                // header View
+                VStack(spacing: 10) {
+                    // profilePicture, status
+                    HStack {
+                        Image("cat")
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 80, height: 80)
+                            .clipShape(Circle())
                         
-                        VStack {
-                            Text("3")
-                                .font(.subheadline)
-                                .fontWeight(.semibold)
-                            
-                            Text("Followers")
-                                .font(.footnote)
+                    Spacer()
+                        // post, follower, following Status
+                        HStack(spacing: 8) {
+                            UserStatView(value: 3, title: "Posts")
+                            UserStatView(value: 12, title: "Followers")
+                            UserStatView(value: 10, title: "Following")
                         }
-                        .frame(width: 76)
-                        
-                        VStack {
-                            Text("3")
-                                .font(.subheadline)
-                                .fontWeight(.semibold)
-                            
-                            Text("Following")
-                                .font(.footnote)
-                        }
-                        .frame(width: 76)
                     }
-                }
-                .padding(.horizontal)
-                // user name & bio
-                VStack(alignment: .leading, spacing: 4) {
-                    Text("Hyunkwan Sung")
-                        .font(.footnote)
-                        .fontWeight(.semibold)
+                    .padding(.horizontal)
                     
-                    Text("Swifting iOS developer")
-                        .font(.footnote)
+                    // user name & bio
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text("Hyunkwan Sung")
+                            .font(.footnote)
+                            .fontWeight(.semibold)
+                        
+                        Text("Swifting iOS developer")
+                            .font(.footnote)
+                    }
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.horizontal)
+                    // action Button
+                    Button {
+                        
+                    } label: {
+                        Text("Edit Profile")
+                            .font(.subheadline)
+                            .fontWeight(.semibold)
+                            .frame(width: 360, height: 32)
+                            .foregroundColor(.black)
+                            .overlay(RoundedRectangle(cornerRadius: 6)
+                                .strokeBorder(Color.gray, lineWidth: 1)
+                            )
+                    }
+                    Divider()
                 }
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(.horizontal)
-                // action Button
-                Button {
-                    
-                } label: {
-                    Text("Edit Profile")
-                        .font(.subheadline)
-                        .fontWeight(.semibold)
-                        .frame(width: 360, height: 32)
-                        .foregroundColor(.black)
-                        .overlay(RoundedRectangle(cornerRadius: 6)
-                            .strokeBorder(Color.gray, lineWidth: 1)
-                        )
+                
+                // post grid view
+                LazyVGrid(columns: gridItems, spacing: 2) {
+                    ForEach(0 ... 15, id: \.self) { index in
+                        Image("cat")
+                            .resizable()
+                            .scaledToFill()
+                    }
+                        
                 }
-                Divider()
             }
-            // post grid view
+            .navigationTitle("Profile")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        
+                    } label: {
+                        Image(systemName: "line.3.horizontal")
+                    }
+                    .foregroundColor(.black)
+                }
+            }
         }
     }
 }

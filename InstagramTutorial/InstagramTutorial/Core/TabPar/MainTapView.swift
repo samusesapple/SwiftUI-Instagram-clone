@@ -10,7 +10,7 @@ import SwiftUI
 struct MainTapView: View {
     var body: some View {
         TabView {
-            Text("Feed")
+            FeedView()
                 .tabItem {
                     Image(systemName: "house")
                 }
@@ -26,7 +26,7 @@ struct MainTapView: View {
                 .tabItem {
                     Image(systemName: "heart")
                 }
-            Text("Profile")
+            ProfileView()
                 .tabItem {
                     Image(systemName: "person")
                 }
