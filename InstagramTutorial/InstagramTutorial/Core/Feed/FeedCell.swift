@@ -17,7 +17,7 @@ struct FeedCell: View {
                     .scaledToFit()
                     .frame(width: 40, height: 40)
                     .clipShape(Circle())
-                Text("고양이")
+                Text("iam.cat")
                     .font(.footnote)
                     .fontWeight(.semibold)
                 Spacer()

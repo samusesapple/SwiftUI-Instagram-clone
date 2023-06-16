@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F129323E2A3C61FE001D4D03 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F129323D2A3C61FE001D4D03 /* SearchView.swift */; };
 		F199003A2A383BB90002AD2A /* InstagramTutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19900392A383BB90002AD2A /* InstagramTutorialApp.swift */; };
 		F199003C2A383BB90002AD2A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F199003B2A383BB90002AD2A /* ContentView.swift */; };
 		F199003E2A383BB90002AD2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F199003D2A383BB90002AD2A /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F129323D2A3C61FE001D4D03 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		F19900362A383BB90002AD2A /* InstagramTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F19900392A383BB90002AD2A /* InstagramTutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramTutorialApp.swift; sourceTree = "<group>"; };
 		F199003B2A383BB90002AD2A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -97,7 +99,7 @@
 				F19900502A383C690002AD2A /* Profile */,
 				F19900512A383C6E0002AD2A /* Root */,
 				F19900522A383C880002AD2A /* Search */,
-				F19900542A383CDB0002AD2A /* TabPar */,
+				F19900542A383CDB0002AD2A /* TabBar */,
 				F19900532A383CD40002AD2A /* UploadPost */,
 			);
 			path = Core;
@@ -151,6 +153,7 @@
 		F19900522A383C880002AD2A /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				F129323D2A3C61FE001D4D03 /* SearchView.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -162,12 +165,12 @@
 			path = UploadPost;
 			sourceTree = "<group>";
 		};
-		F19900542A383CDB0002AD2A /* TabPar */ = {
+		F19900542A383CDB0002AD2A /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
 				F19900552A383D920002AD2A /* MainTapView.swift */,
 			);
-			path = TabPar;
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 		F19900592A38B6580002AD2A /* Components */ = {
@@ -252,6 +255,7 @@
 				F19900582A383F770002AD2A /* ProfileView.swift in Sources */,
 				F199003C2A383BB90002AD2A /* ContentView.swift in Sources */,
 				F199003A2A383BB90002AD2A /* InstagramTutorialApp.swift in Sources */,
+				F129323E2A3C61FE001D4D03 /* SearchView.swift in Sources */,
 				F199005B2A38B67B0002AD2A /* UserStatView.swift in Sources */,
 				F199005D2A38BA930002AD2A /* FeedCell.swift in Sources */,
 				F19900562A383D920002AD2A /* MainTapView.swift in Sources */,
