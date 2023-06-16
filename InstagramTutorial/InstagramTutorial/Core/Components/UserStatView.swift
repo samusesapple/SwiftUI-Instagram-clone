@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct UserStatView: View {
+struct UserStatView: View { 
     let value: Int
     let title: String
     
