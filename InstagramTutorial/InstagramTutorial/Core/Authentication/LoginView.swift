@@ -25,18 +25,10 @@ struct LoginView: View {
                 VStack {
                     TextField("Email", text: $email)
                         .autocapitalization(.none)
-                        .font(.subheadline)
-                        .padding(12)
-                        .background(Color(.systemGray6))
-                        .cornerRadius(10)
-                        .padding(.horizontal, 24)
+                        .modifier(TextFieldModifier())
                     
                     SecureField("Password", text: $password)
-                        .font(.subheadline)
-                        .padding(12)
-                        .background(Color(.systemGray6))
-                        .cornerRadius(10)
-                        .padding(.horizontal, 24)
+                        .modifier(TextFieldModifier())
                 }
                 // forgot password Button
                 Button {
@@ -97,7 +89,8 @@ struct LoginView: View {
                 
                 // Sign Up - navigation link
                 NavigationLink {
-                    Text("Sign up!")
+                    AddEmailView()
+                        .navigationBarBackButtonHidden(true)
                 } label: {
                     HStack(spacing: 3) {
                         Text("Don't have an account?")
@@ -105,6 +98,7 @@ struct LoginView: View {
                         Text("Sign Up!")
                             .fontWeight(.semibold)
                     }
+                    .foregroundColor(Color(.systemBlue))
                     .font(.footnote)
                 }
                 .padding(.vertical, 16)

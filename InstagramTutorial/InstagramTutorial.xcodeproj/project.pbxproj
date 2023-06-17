@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		F129323E2A3C61FE001D4D03 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F129323D2A3C61FE001D4D03 /* SearchView.swift */; };
 		F12932402A3C6878001D4D03 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F129323F2A3C6878001D4D03 /* LoginView.swift */; };
+		F12932422A3C7110001D4D03 /* AddEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12932412A3C7110001D4D03 /* AddEmailView.swift */; };
+		F12932442A3C73BB001D4D03 /* TextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12932432A3C73BB001D4D03 /* TextFieldModifier.swift */; };
+		F12932462A3C7ECB001D4D03 /* CreateUserNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12932452A3C7ECB001D4D03 /* CreateUserNameView.swift */; };
+		F12932482A3C8018001D4D03 /* UserSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12932472A3C8018001D4D03 /* UserSignInView.swift */; };
 		F199003A2A383BB90002AD2A /* InstagramTutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19900392A383BB90002AD2A /* InstagramTutorialApp.swift */; };
 		F199003C2A383BB90002AD2A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F199003B2A383BB90002AD2A /* ContentView.swift */; };
 		F199003E2A383BB90002AD2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F199003D2A383BB90002AD2A /* Assets.xcassets */; };
@@ -23,6 +27,10 @@
 /* Begin PBXFileReference section */
 		F129323D2A3C61FE001D4D03 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		F129323F2A3C6878001D4D03 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		F12932412A3C7110001D4D03 /* AddEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmailView.swift; sourceTree = "<group>"; };
+		F12932432A3C73BB001D4D03 /* TextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldModifier.swift; sourceTree = "<group>"; };
+		F12932452A3C7ECB001D4D03 /* CreateUserNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserNameView.swift; sourceTree = "<group>"; };
+		F12932472A3C8018001D4D03 /* UserSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSignInView.swift; sourceTree = "<group>"; };
 		F19900362A383BB90002AD2A /* InstagramTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F19900392A383BB90002AD2A /* InstagramTutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramTutorialApp.swift; sourceTree = "<group>"; };
 		F199003B2A383BB90002AD2A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -125,6 +133,8 @@
 			isa = PBXGroup;
 			children = (
 				F129323F2A3C6878001D4D03 /* LoginView.swift */,
+				F12932412A3C7110001D4D03 /* AddEmailView.swift */,
+				F12932452A3C7ECB001D4D03 /* CreateUserNameView.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -180,6 +190,8 @@
 			isa = PBXGroup;
 			children = (
 				F199005A2A38B67B0002AD2A /* UserStatView.swift */,
+				F12932432A3C73BB001D4D03 /* TextFieldModifier.swift */,
+				F12932472A3C8018001D4D03 /* UserSignInView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -255,13 +267,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				F199005F2A38BAA80002AD2A /* FeedView.swift in Sources */,
+				F12932482A3C8018001D4D03 /* UserSignInView.swift in Sources */,
 				F19900582A383F770002AD2A /* ProfileView.swift in Sources */,
+				F12932462A3C7ECB001D4D03 /* CreateUserNameView.swift in Sources */,
 				F199003C2A383BB90002AD2A /* ContentView.swift in Sources */,
 				F12932402A3C6878001D4D03 /* LoginView.swift in Sources */,
 				F199003A2A383BB90002AD2A /* InstagramTutorialApp.swift in Sources */,
+				F12932422A3C7110001D4D03 /* AddEmailView.swift in Sources */,
 				F129323E2A3C61FE001D4D03 /* SearchView.swift in Sources */,
 				F199005B2A38B67B0002AD2A /* UserStatView.swift in Sources */,
 				F199005D2A38BA930002AD2A /* FeedCell.swift in Sources */,
+				F12932442A3C73BB001D4D03 /* TextFieldModifier.swift in Sources */,
 				F19900562A383D920002AD2A /* MainTapView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
