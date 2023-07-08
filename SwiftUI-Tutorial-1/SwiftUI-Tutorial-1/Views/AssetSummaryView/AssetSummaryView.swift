@@ -17,8 +17,14 @@ struct AssetSummaryView: View {
     
     var body: some View {
         VStack(spacing: 20) {
-            ForEach(assets) { assets in
-                AssetSectionView(assetSection: assets)
+            ForEach(assets) { asset in
+                switch asset.type {
+                case .creditCard:
+                    AssetCardSectionView(asset: asset)
+                        .frame(idealWidth: 250)
+                default:
+                    AssetSectionView(assetSection: asset)
+                }
             }
             .background(.white)
             .clipShape(RoundedRectangle(cornerRadius: 10))
@@ -29,8 +35,10 @@ struct AssetSummaryView: View {
 
 struct AssetSummaryView_Previews: PreviewProvider {
     static var previews: some View {
-        AssetSummaryView()
-            .environmentObject(AssetSummaryData())
-            .background(Color.gray.opacity(0.2))
+        ScrollView{
+            AssetSummaryView()
+                .environmentObject(AssetSummaryData())
+                .background(Color.gray.opacity(0.2))
+        }
     }
 }
