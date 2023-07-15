@@ -5,7 +5,7 @@
 <br>
 <br>
 
-## Buisness Card
+## 1. Buisness Card
 ### 배운 내용
 ---
 SwiftUI에서의 View 컴포넌트화 하는 법
