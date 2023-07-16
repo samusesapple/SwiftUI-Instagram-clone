@@ -8,32 +8,29 @@
 import SwiftUI
 
 struct InfoView: View {
-    
     let text: String
     let imageName: String
     
     var body: some View {
         RoundedRectangle(cornerRadius: 30)
-            .foregroundColor(.white)
+            .fill(.white)
             .frame(height: 45)
-            .overlay {
-                HStack {
+            .overlay(HStack {
                     Image(systemName: imageName)
                         .foregroundColor(Color(red: 0.8,
                                                green: 0.54,
                                                blue: 0.25))
                     Text(text)
-                        .font(Font.custom("Roboto-Regular", size: 17))
+                        .font(Font.custom("Roboto-Regular", size: 15))
                         .foregroundColor(.black)
-                }
-            }
+            })
             .padding(.all)
     }
 }
 
 struct InfoView_Previews: PreviewProvider {
     static var previews: some View {
-        InfoView(text: "hello", imageName: "person")
-            .background(Color.black)
+        InfoView(text: "Hello", imageName: "phone.fill")
+            .previewLayout(.sizeThatFits)
     }
 }

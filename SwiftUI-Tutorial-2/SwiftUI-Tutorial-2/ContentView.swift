@@ -13,11 +13,10 @@ struct ContentView: View {
             Color(red: 0.15, green: 0.24, blue: 0.55)
                 .edgesIgnoringSafeArea(.all)
             VStack {
-                Spacer()
                 Image("sam")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 200, height: 200)
+                    .frame(width: 150, height: 150)
                     .clipShape(Circle())
                     .overlay(
                         Circle()
@@ -25,10 +24,10 @@ struct ContentView: View {
                     )
                 
                 Text("Sam Sung")
-                    .font(Font.custom("Roboto-Bold", size: 40))
+                    .font(Font.custom("Roboto-Bold", size: 38))
                     .foregroundColor(.white)
                 Text("iOS Developer")
-                    .font(Font.custom("Roboto-Regular", size: 25))
+                    .font(Font.custom("Roboto-Regular", size: 23))
                     .foregroundColor(.white)
                 Divider()
                 
@@ -36,11 +35,6 @@ struct ContentView: View {
                          imageName: "envelope")
                 InfoView(text: "https://github.com/samusesapple",
                          imageName: "globe")
-                Spacer()
-                Text("@samusesapple")
-                    .font(Font.custom("Roboto-BoldItalic",
-                                      size: 16))
-                    .foregroundColor(.white.opacity(0.4))
             }
         }
     }
