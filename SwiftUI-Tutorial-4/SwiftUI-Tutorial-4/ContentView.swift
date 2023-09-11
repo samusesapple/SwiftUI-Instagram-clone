@@ -44,7 +44,7 @@ struct ContentView: View {
                     // 구글 웹뷰
                     NavigationLink {
                         WebView(siteURLString: "https://www.google.com")
-                            .edgesIgnoringSafeArea(.all)
+                            .ignoresSafeArea(.all)
                     } label: {
                         Text("구글")
                             .padding()
