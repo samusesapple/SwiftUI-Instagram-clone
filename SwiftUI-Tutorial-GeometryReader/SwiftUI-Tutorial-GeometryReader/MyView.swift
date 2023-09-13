@@ -15,6 +15,10 @@ struct ContentView: View {
     
     @State var index: Index = .one
     
+    let centerPoint: (GeometryProxy) -> CGPoint = { proxy in
+        return CGPoint(x: proxy.frame(in: .local).midX,
+                       y: proxy.frame(in: .local).midY)
+    }
     
     var body: some View {
      
@@ -63,8 +67,7 @@ struct ContentView: View {
                             .background(.green)
                     }
                 }
-                .position(x: proxy.frame(in: .local).midX,
-                          y: proxy.frame(in: .local).midY)
+                .position(centerPoint(proxy))
                 
         }
         .background(.yellow)
