@@ -53,11 +53,12 @@ UIView 방식대로 만든 WebView를 NavigationLink로 SwiftUI와 연결지어 
 ## 4. Stacks (V, H, Z Stack)
 ### 배운 내용
 --- 
-VStack, HStack, ZStack을 활용한 스크롤 리스트 생성
+VStack, HStack, ZStack을 활용한 스크롤 리스트 생성, List와 ForEach문으로 셀 세팅하기
 <br>
 <br> 
 
 ### 구현 화면
 ---
-![Simulator Screen Recording - iPhone 14 - 2023-09-13 at 11 29 19](https://github.com/samusesapple/SwiftUI-Tutorials/assets/126672733/3838f187-c03d-432c-ae65-b3f65e217f0a)
+![Simulator Screen Recording - iPhone 14 - 2023-09-13 at 13 37 33](https://github.com/samusesapple/SwiftUI-Tutorials/assets/126672733/cb3b21bd-fd27-4778-a8a8-e7659ee0d3ed)
+
 
