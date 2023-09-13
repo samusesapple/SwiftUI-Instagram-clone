@@ -18,10 +18,7 @@ struct ContentView: View {
     
     var body: some View {
      
-        GeometryReader { geomerty in
-            HStack {
-                Spacer()
-                
+        GeometryReader { proxy in
                 VStack(spacing: 0) {
                     Button {
                         withAnimation {
@@ -31,7 +28,7 @@ struct ContentView: View {
                         Text("1")
                             .font(.largeTitle)
                             .fontWeight(.black)
-                            .frame(width: 40, height: geomerty.size.height / 3)
+                            .frame(width: 40, height: proxy.size.height / 3)
                             .padding(.horizontal, self.index == .one ? 40 : 0)
                             .foregroundColor(.white)
                             .background(.red)
@@ -45,7 +42,7 @@ struct ContentView: View {
                         Text("2")
                             .font(.largeTitle)
                             .fontWeight(.black)
-                            .frame(width: 40, height: geomerty.size.height / 3)
+                            .frame(width: 40, height: proxy.size.height / 3)
                             .padding(.horizontal, self.index == .two ? 40 : 0)
                             .foregroundColor(.white)
                             .background(.blue)
@@ -59,16 +56,16 @@ struct ContentView: View {
                         Text("3")
                             .font(.largeTitle)
                             .fontWeight(.black)
-                            .frame(width: 40, height: geomerty.size.height / 3)
+                            .frame(width: 40, height: proxy.size.height / 3)
                             .padding(.horizontal, self.index == .three ? 40 : 0)
 
                             .foregroundColor(.white)
                             .background(.green)
                     }
                 }
+                .position(x: proxy.frame(in: .local).midX,
+                          y: proxy.frame(in: .local).midY)
                 
-                Spacer()
-            }
         }
         .background(.yellow)
     }
