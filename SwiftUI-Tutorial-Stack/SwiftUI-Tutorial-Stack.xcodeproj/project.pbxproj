@@ -14,6 +14,7 @@
 		DD88F6742AAEE30000F37CD8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD88F6732AAEE30000F37CD8 /* Preview Assets.xcassets */; };
 		DD88F67B2AAEE93500F37CD8 /* PersonalCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD88F67A2AAEE93500F37CD8 /* PersonalCard.swift */; };
 		DD88F67D2AAEEA2400F37CD8 /* PersonImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD88F67C2AAEEA2400F37CD8 /* PersonImage.swift */; };
+		DDBC28442AB157F200B55702 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBC28432AB157F100B55702 /* ListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		DD88F6732AAEE30000F37CD8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DD88F67A2AAEE93500F37CD8 /* PersonalCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalCard.swift; sourceTree = "<group>"; };
 		DD88F67C2AAEEA2400F37CD8 /* PersonImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonImage.swift; sourceTree = "<group>"; };
+		DDBC28432AB157F100B55702 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				DD88F67A2AAEE93500F37CD8 /* PersonalCard.swift */,
 				DD16DCA22AB066CF0021B4AE /* BasicCard.swift */,
 				DD88F67C2AAEEA2400F37CD8 /* PersonImage.swift */,
+				DDBC28432AB157F100B55702 /* ListView.swift */,
 				DD88F6702AAEE30000F37CD8 /* Assets.xcassets */,
 				DD88F6722AAEE30000F37CD8 /* Preview Content */,
 			);
@@ -148,6 +151,7 @@
 			files = (
 				DD88F66F2AAEE2FF00F37CD8 /* ContentView.swift in Sources */,
 				DD16DCA32AB066CF0021B4AE /* BasicCard.swift in Sources */,
+				DDBC28442AB157F200B55702 /* ListView.swift in Sources */,
 				DD88F67B2AAEE93500F37CD8 /* PersonalCard.swift in Sources */,
 				DD88F67D2AAEEA2400F37CD8 /* PersonImage.swift in Sources */,
 				DD88F66D2AAEE2FF00F37CD8 /* SwiftUI_Tutorial_StackApp.swift in Sources */,

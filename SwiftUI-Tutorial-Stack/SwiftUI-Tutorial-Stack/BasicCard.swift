@@ -8,9 +8,14 @@
 import SwiftUI
 
 struct BasicCard: View {
+    var icon: Image
+    var title: String
+    var timeString: String
+    var color: Color
+    
     var body: some View {
         HStack(spacing: 20) {
-            Image(systemName: "flame.fill")
+            icon
                 .font(.system(size: 48))
                 .foregroundColor(.white)
             
@@ -18,23 +23,26 @@ struct BasicCard: View {
                 Divider()
                     .opacity(0)
                 
-                Text("출근 빡코딩")
+                Text(title)
                     .font(.system(size: 23,
                                   weight: .bold))
                     .foregroundColor(.white)
                 
-                Text("10 AM ~ 19 PM")
+                Text(timeString)
                     .foregroundColor(.white)
             }
         }
         .padding(25)
-        .background(.purple)
+        .background(color)
         .cornerRadius(20)
     }
 }
 
 struct BasicCard_Previews: PreviewProvider {
     static var previews: some View {
-        BasicCard()
+        BasicCard(icon: Image(systemName: "flame.fill"),
+                  title: "출근 빡코딩",
+                  timeString: "10 AM ~ 19 PM",
+                  color: .purple)
     }
 }
