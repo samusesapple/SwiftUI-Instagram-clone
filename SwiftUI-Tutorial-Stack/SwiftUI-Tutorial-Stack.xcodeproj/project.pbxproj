@@ -15,6 +15,8 @@
 		DD88F67B2AAEE93500F37CD8 /* PersonalCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD88F67A2AAEE93500F37CD8 /* PersonalCard.swift */; };
 		DD88F67D2AAEEA2400F37CD8 /* PersonImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD88F67C2AAEEA2400F37CD8 /* PersonImage.swift */; };
 		DDBC28442AB157F200B55702 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBC28432AB157F100B55702 /* ListView.swift */; };
+		DDBC28482AB17BE200B55702 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBC28472AB17BE200B55702 /* UserView.swift */; };
+		DDBC284A2AB1804800B55702 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBC28492AB1804800B55702 /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,9 @@
 		DD88F67A2AAEE93500F37CD8 /* PersonalCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalCard.swift; sourceTree = "<group>"; };
 		DD88F67C2AAEEA2400F37CD8 /* PersonImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonImage.swift; sourceTree = "<group>"; };
 		DDBC28432AB157F100B55702 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		DDBC28472AB17BE200B55702 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		DDBC28492AB1804800B55702 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		DDBC284B2AB1836A00B55702 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +64,10 @@
 		DD88F66B2AAEE2FF00F37CD8 /* SwiftUI-Tutorial-Stack */ = {
 			isa = PBXGroup;
 			children = (
+				DDBC284B2AB1836A00B55702 /* Info.plist */,
 				DD88F66C2AAEE2FF00F37CD8 /* SwiftUI_Tutorial_StackApp.swift */,
-				DD88F66E2AAEE2FF00F37CD8 /* ContentView.swift */,
-				DD88F67A2AAEE93500F37CD8 /* PersonalCard.swift */,
-				DD16DCA22AB066CF0021B4AE /* BasicCard.swift */,
-				DD88F67C2AAEEA2400F37CD8 /* PersonImage.swift */,
-				DDBC28432AB157F100B55702 /* ListView.swift */,
+				DDBC28462AB17AF100B55702 /* Views */,
+				DDBC28452AB17ADF00B55702 /* Components */,
 				DD88F6702AAEE30000F37CD8 /* Assets.xcassets */,
 				DD88F6722AAEE30000F37CD8 /* Preview Content */,
 			);
@@ -77,6 +80,27 @@
 				DD88F6732AAEE30000F37CD8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DDBC28452AB17ADF00B55702 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				DD88F67A2AAEE93500F37CD8 /* PersonalCard.swift */,
+				DD16DCA22AB066CF0021B4AE /* BasicCard.swift */,
+				DD88F67C2AAEEA2400F37CD8 /* PersonImage.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		DDBC28462AB17AF100B55702 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DD88F66E2AAEE2FF00F37CD8 /* ContentView.swift */,
+				DDBC28432AB157F100B55702 /* ListView.swift */,
+				DDBC28472AB17BE200B55702 /* UserView.swift */,
+				DDBC28492AB1804800B55702 /* WebView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,11 +174,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD88F66F2AAEE2FF00F37CD8 /* ContentView.swift in Sources */,
+				DDBC284A2AB1804800B55702 /* WebView.swift in Sources */,
 				DD16DCA32AB066CF0021B4AE /* BasicCard.swift in Sources */,
 				DDBC28442AB157F200B55702 /* ListView.swift in Sources */,
 				DD88F67B2AAEE93500F37CD8 /* PersonalCard.swift in Sources */,
 				DD88F67D2AAEEA2400F37CD8 /* PersonImage.swift in Sources */,
 				DD88F66D2AAEE2FF00F37CD8 /* SwiftUI_Tutorial_StackApp.swift in Sources */,
+				DDBC28482AB17BE200B55702 /* UserView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +312,7 @@
 				DEVELOPMENT_TEAM = X55X2695H3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI-Tutorial-Stack/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -298,9 +325,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.SamSung.SwiftUI-Tutorial-Stack";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,6 +345,7 @@
 				DEVELOPMENT_TEAM = X55X2695H3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI-Tutorial-Stack/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -327,9 +358,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.SamSung.SwiftUI-Tutorial-Stack";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

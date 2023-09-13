@@ -8,11 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var isNavigationBarHidden: Bool = false
+    
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack(alignment: .bottomTrailing) {
                 VStack(alignment: .leading, spacing: 0) {
-                    // 상단바
+                    // 상단바 (커스텀 네비게이션바)
                     HStack {
                         NavigationLink {
                             ListView()
@@ -25,8 +28,13 @@ struct ContentView: View {
                         
                         Spacer()
                         
-                        Image(systemName: "person.crop.circle.fill")
-                            .font(.largeTitle)
+                        NavigationLink {
+                            UserView()
+                        } label: {
+                            Image(systemName: "person.crop.circle.fill")
+                                .font(.largeTitle)
+                                .foregroundColor(.black)
+                        }
                     }
                     
                     // 제목
@@ -83,6 +91,11 @@ struct ContentView: View {
                 }
                 .padding(20)
                 .shadow(radius: 10)
+            }
+            .navigationTitle("메인")
+            .toolbar(isNavigationBarHidden ? .hidden : .visible)
+            .onAppear {
+                self.isNavigationBarHidden = true
             }
         }
     }
