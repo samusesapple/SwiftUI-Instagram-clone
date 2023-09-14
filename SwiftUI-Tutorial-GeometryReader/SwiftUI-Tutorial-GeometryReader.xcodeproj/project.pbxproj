@@ -7,18 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DDB5171B2AB29CDA00582A25 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB5171A2AB29CDA00582A25 /* TestView.swift */; };
 		DDBC28592AB1A44000B55702 /* SwiftUI_Tutorial_GeometryReaderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBC28582AB1A44000B55702 /* SwiftUI_Tutorial_GeometryReaderApp.swift */; };
-		DDBC285B2AB1A44000B55702 /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBC285A2AB1A44000B55702 /* MyView.swift */; };
+		DDBC285B2AB1A44000B55702 /* GeometryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBC285A2AB1A44000B55702 /* GeometryView.swift */; };
 		DDBC285D2AB1A44100B55702 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDBC285C2AB1A44100B55702 /* Assets.xcassets */; };
 		DDBC28602AB1A44100B55702 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDBC285F2AB1A44100B55702 /* Preview Assets.xcassets */; };
+		DDBC28672AB1BEB400B55702 /* TabRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBC28662AB1BEB400B55702 /* TabRootView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DDB5171A2AB29CDA00582A25 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		DDBC28552AB1A44000B55702 /* SwiftUI-Tutorial-GeometryReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Tutorial-GeometryReader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDBC28582AB1A44000B55702 /* SwiftUI_Tutorial_GeometryReaderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Tutorial_GeometryReaderApp.swift; sourceTree = "<group>"; };
-		DDBC285A2AB1A44000B55702 /* MyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
+		DDBC285A2AB1A44000B55702 /* GeometryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryView.swift; sourceTree = "<group>"; };
 		DDBC285C2AB1A44100B55702 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDBC285F2AB1A44100B55702 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DDBC28662AB1BEB400B55702 /* TabRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabRootView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +56,9 @@
 			isa = PBXGroup;
 			children = (
 				DDBC28582AB1A44000B55702 /* SwiftUI_Tutorial_GeometryReaderApp.swift */,
-				DDBC285A2AB1A44000B55702 /* MyView.swift */,
+				DDBC285A2AB1A44000B55702 /* GeometryView.swift */,
+				DDBC28662AB1BEB400B55702 /* TabRootView.swift */,
+				DDB5171A2AB29CDA00582A25 /* TestView.swift */,
 				DDBC285C2AB1A44100B55702 /* Assets.xcassets */,
 				DDBC285E2AB1A44100B55702 /* Preview Content */,
 			);
@@ -137,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDBC285B2AB1A44000B55702 /* MyView.swift in Sources */,
+				DDB5171B2AB29CDA00582A25 /* TestView.swift in Sources */,
+				DDBC285B2AB1A44000B55702 /* GeometryView.swift in Sources */,
+				DDBC28672AB1BEB400B55702 /* TabRootView.swift in Sources */,
 				DDBC28592AB1A44000B55702 /* SwiftUI_Tutorial_GeometryReaderApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

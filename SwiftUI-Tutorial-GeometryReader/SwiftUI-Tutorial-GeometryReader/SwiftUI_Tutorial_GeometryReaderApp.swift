@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftUI_Tutorial_GeometryReaderApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabRootView()
         }
     }
 }

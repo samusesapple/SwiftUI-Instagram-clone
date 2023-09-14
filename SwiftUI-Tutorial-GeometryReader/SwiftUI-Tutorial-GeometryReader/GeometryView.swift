@@ -11,7 +11,7 @@ enum Index {
     case one, two, three
 }
 
-struct ContentView: View {
+struct GeometryView: View {
     
     @State var index: Index = .one
     
@@ -74,8 +74,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct GeometryView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        GeometryView()
     }
 }
