@@ -60,5 +60,20 @@ VStack, HStack, ZStack을 활용한 스크롤 리스트 생성, List와 ForEach�
 ### 구현 화면
 ---
 ![Simulator Screen Recording - iPhone 14 - 2023-09-13 at 13 37 33](https://github.com/samusesapple/SwiftUI-Tutorials/assets/126672733/cb3b21bd-fd27-4778-a8a8-e7659ee0d3ed)
+<br>
+<br>
+<br>
+
+## 5. Geometry Proxy
+### 배운 내용
+--- 
+GeometryProxy를 활용하여 로컬 기기에 맞게 뷰 디자인 및 커스텀 탭바 만들기
+![image](https://github.com/samusesapple/SwiftUI-Tutorials/assets/126672733/544d207e-90f8-479a-b04a-3115e45e5a94)
+<br>
+<br> 
+
+### 구현 화면
+---
+![Simulator Screen Recording - iPhone 14 Pro Max - 2023-09-14 at 12 25 42](https://github.com/samusesapple/SwiftUI-Tutorials/assets/126672733/78501a2c-96c7-487e-b831-706e6e193b5e)
 
 
