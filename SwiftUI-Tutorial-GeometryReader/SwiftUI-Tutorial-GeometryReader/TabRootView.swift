@@ -13,47 +13,57 @@ enum Menu {
 
 struct TabRootView: View {
     
+    // MARK: - States
+    
     @State var selectedTab: Menu = .home
     
-    var tabBarPosition: (Menu, GeometryProxy) -> CGPoint = {
-        var divider: Double = 0
+    // MARK: - Computed Properties
+    
+    var circleXPosition: (Menu, GeometryProxy) -> CGFloat = {
+        var times: CGFloat = 0
         
         switch $0 {
         case .home:
-            divider = 6
+            times = -1
         case .cart:
-            divider = 2
+            times = 0
         case .profile:
-            divider = 1.2
+            times = 1
         }
-        
-        return CGPoint(x: $1.frame(in: .local).minX + $1.size.width / divider,
-                       y: $1.frame(in: .local).maxY - 26)
+        return CGFloat($1.size.width / 3 * times)
     }
+    
+    var view: (Menu) -> TestView = {
+        switch $0 {
+        case .home:
+            return TestView(title: "홈",
+                     backgroundColor: .red)
+        case .cart:
+            return TestView(title: "장바구니",
+                     backgroundColor: .green)
+        case .profile:
+            return TestView(title: "프로필",
+                     backgroundColor: .blue)
+        }
+    }
+    
+    // MARK: - Draw
     
     var body: some View {
         
         GeometryReader { proxy in
             
-            // 배경이 되는 view
             ZStack(alignment: .bottom) {
-                switch selectedTab {
-                case .home:
-                    TestView(title: "홈",
-                             backgroundColor: .red)
-                case .cart:
-                    TestView(title: "장바구니",
-                             backgroundColor: .green)
-                case .profile:
-                    TestView(title: "프로필",
-                             backgroundColor: .blue)
-                }
+                
+                // 배경이 되는 view
+                view(selectedTab)
                 
                 // 탭바 선택에 따른 동그라미 애니메이션
                 Circle()
                     .fill(.white)
                     .frame(width: 100, height: 100)
-                    .position(tabBarPosition(selectedTab, proxy))
+                    .offset(x: circleXPosition(selectedTab, proxy) ,y: 20)
+//                    .position(tabBarPosition(selectedTab, proxy))
                 
                 // 커스텀 탭바
                 HStack(spacing: 0) {
@@ -90,7 +100,7 @@ struct TabRootView: View {
                             .frame(width: proxy.size.width / 3)
                     }
                 }
-                .padding(.top, 10)
+                .padding(.vertical, 10)
                 .frame(maxHeight: 50)
                 .background(.white)
             }
