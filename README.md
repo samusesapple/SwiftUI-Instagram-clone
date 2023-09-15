@@ -75,5 +75,19 @@ GeometryProxy를 활용하여 로컬 기기에 맞게 뷰 디자인 및 커스�
 ### 구현 화면
 ---
 ![Simulator Screen Recording - iPhone 14 Pro Max - 2023-09-14 at 12 25 42](https://github.com/samusesapple/SwiftUI-Tutorials/assets/126672733/78501a2c-96c7-487e-b831-706e6e193b5e)
+<br>
+<br>
+<br>
 
+## 6. QR Code Scanner
+### 배운 내용
+--- 
+SwiftUI는 상태값이 변경되면 view를 다시 처음부터 그림, 이를 활용해서 필요한 경우 모달창을 띄우도록 설정 가능 <br>
+(Ref. https://github.com/twostraws/CodeScanner)
+<br>
+<br> 
+
+### 구현 화면
+---
+![KakaoTalk_Video_2023-09-15-12-12-51](https://github.com/samusesapple/SwiftUI-Tutorials/assets/126672733/9355381d-9104-43e0-9340-2f33f1052eaa)
 
