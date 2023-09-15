@@ -35,11 +35,15 @@ struct QRCodeScannerExampleView: View {
                     .shadow(radius: 4, x: 1, y: 7)
             }
             .sheet(isPresented: $isPresentingScanner) {
-                CodeScannerView(codeTypes: [.qr]) { response in
-                    if case let .success(result) = response {
-                        scannedCode = result.string
-                        isPresentingScanner = false
-                    } 
+                ZStack {
+                    CodeScannerView(codeTypes: [.qr]) { response in
+                        if case let .success(result) = response {
+                            scannedCode = result.string
+                            isPresentingScanner = false
+                        }
+                    }
+                    
+                    QRCodeGuideLineView()
                 }
             }
         }
