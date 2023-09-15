@@ -82,11 +82,12 @@ GeometryProxy를 활용하여 로컬 기기에 맞게 뷰 디자인 및 커스�
 ## 6. QR Code Scanner
 ### 배운 내용
 --- 
-SwiftUI는 상태값이 변경되면 view를 다시 처음부터 그림, 이를 활용해서 필요한 경우 모달창을 띄우도록 설정 가능
+SwiftUI는 상태값이 변경되면 view를 다시 처음부터 그림, 이를 활용해서 필요한 경우 모달창을 띄우도록 설정 가능 <br>
 (Ref. https://github.com/twostraws/CodeScanner)
 <br>
 <br> 
 
 ### 구현 화면
 ---
-![KakaoTalk_Video_2023-09-15-12-12-51](https://github.com/samusesapple/SwiftUI-Tutorials/assets/126672733/353ae4a6-a22e-4928-8c70-bb97222b008e)
+![KakaoTalk_Video_2023-09-15-12-12-51](https://github.com/samusesapple/SwiftUI-Tutorials/assets/126672733/9355381d-9104-43e0-9340-2f33f1052eaa)
+
