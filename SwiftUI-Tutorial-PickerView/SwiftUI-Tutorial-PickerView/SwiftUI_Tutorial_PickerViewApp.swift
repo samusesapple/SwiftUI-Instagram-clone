@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftUI_Tutorial_PickerViewApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            FriendList()
         }
     }
 }
