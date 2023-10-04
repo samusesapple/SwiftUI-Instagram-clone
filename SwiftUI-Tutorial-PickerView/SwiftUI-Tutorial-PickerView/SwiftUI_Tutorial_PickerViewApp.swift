@@ -2,7 +2,7 @@
 //  SwiftUI_Tutorial_PickerViewApp.swift
 //  SwiftUI-Tutorial-PickerView
 //
-//  Created by dev on 2023/10/04.
+//  Created by Sam Sung on 2023/10/04.
 //
 
 import SwiftUI
