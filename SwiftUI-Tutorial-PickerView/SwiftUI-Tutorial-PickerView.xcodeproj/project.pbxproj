@@ -12,6 +12,9 @@
 		DD0785E52ACD3F1A00272992 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD0785E42ACD3F1A00272992 /* Assets.xcassets */; };
 		DD0785E82ACD3F1A00272992 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD0785E72ACD3F1A00272992 /* Preview Assets.xcassets */; };
 		DD0785EF2ACD5EF900272992 /* ColorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0785EE2ACD5EF900272992 /* ColorType.swift */; };
+		DD0785F12ACD617500272992 /* FriendList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0785F02ACD617500272992 /* FriendList.swift */; };
+		DD0785F32ACD623100272992 /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0785F22ACD623100272992 /* School.swift */; };
+		DD0785F52ACD624700272992 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0785F42ACD624700272992 /* Friend.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,9 @@
 		DD0785E42ACD3F1A00272992 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD0785E72ACD3F1A00272992 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DD0785EE2ACD5EF900272992 /* ColorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorType.swift; sourceTree = "<group>"; };
+		DD0785F02ACD617500272992 /* FriendList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendList.swift; sourceTree = "<group>"; };
+		DD0785F22ACD623100272992 /* School.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
+		DD0785F42ACD624700272992 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +60,11 @@
 			isa = PBXGroup;
 			children = (
 				DD0785E02ACD3F1900272992 /* SwiftUI_Tutorial_PickerViewApp.swift */,
-				DD0785E22ACD3F1900272992 /* ContentView.swift */,
+				DD0785F22ACD623100272992 /* School.swift */,
+				DD0785F42ACD624700272992 /* Friend.swift */,
 				DD0785EE2ACD5EF900272992 /* ColorType.swift */,
+				DD0785E22ACD3F1900272992 /* ContentView.swift */,
+				DD0785F02ACD617500272992 /* FriendList.swift */,
 				DD0785E42ACD3F1A00272992 /* Assets.xcassets */,
 				DD0785E62ACD3F1A00272992 /* Preview Content */,
 			);
@@ -143,6 +152,9 @@
 				DD0785E32ACD3F1900272992 /* ContentView.swift in Sources */,
 				DD0785EF2ACD5EF900272992 /* ColorType.swift in Sources */,
 				DD0785E12ACD3F1900272992 /* SwiftUI_Tutorial_PickerViewApp.swift in Sources */,
+				DD0785F52ACD624700272992 /* Friend.swift in Sources */,
+				DD0785F32ACD623100272992 /* School.swift in Sources */,
+				DD0785F12ACD617500272992 /* FriendList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
