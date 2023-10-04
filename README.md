@@ -107,4 +107,19 @@ SwiftUI는 상태값이 변경되면 view를 다시 처음부터 그림, 이를 
 ---
 ![Simulator Screen Recording - iPhone 14 Pro - 2023-10-04 at 15 31 46](https://github.com/samusesapple/SwiftUI-Tutorials/assets/126672733/ffbf0744-5468-4fd3-923f-dee268bd9fb2)
 
+<br>
+<br>
+<br>
+
+## 8. Picker
+### 배운 내용
+--- 
+SwiftUI에서의 Picker 사용법에 대해 학습 <br>
+<br>
+<br> 
+
+### 구현 화면
+---
+![Simulator Screen Recording - iPhone 14 Pro - 2023-10-04 at 17 52 08](https://github.com/samusesapple/SwiftUI-Tutorials/assets/126672733/60279cf7-a4de-4b12-a51f-1f564204d540)
+
 
