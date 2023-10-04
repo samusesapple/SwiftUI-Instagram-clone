@@ -91,3 +91,20 @@ SwiftUI는 상태값이 변경되면 view를 다시 처음부터 그림, 이를 
 ---
 ![KakaoTalk_Video_2023-09-15-12-12-51](https://github.com/samusesapple/SwiftUI-Tutorials/assets/126672733/9355381d-9104-43e0-9340-2f33f1052eaa)
 
+<br>
+<br>
+<br>
+
+## 7. Custom Toast & Custom Pop up
+### 배운 내용
+--- 
+커스텀 토스트 메세지와 팝업 뷰를 SwiftUI에서 띄우는 방법에 대해 알아보았다. <br>
+(Ref. [https://github.com/twostraws/CodeScanner](https://github.com/exyte/PopupView))
+<br>
+<br> 
+
+### 구현 화면
+---
+![Simulator Screen Recording - iPhone 14 Pro - 2023-10-04 at 15 31 46](https://github.com/samusesapple/SwiftUI-Tutorials/assets/126672733/ffbf0744-5468-4fd3-923f-dee268bd9fb2)
+
+
