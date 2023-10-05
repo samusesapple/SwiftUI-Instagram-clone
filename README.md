@@ -106,7 +106,6 @@ SwiftUI는 상태값이 변경되면 view를 다시 처음부터 그림, 이를 
 ### 구현 화면
 ---
 ![Simulator Screen Recording - iPhone 14 Pro - 2023-10-04 at 15 31 46](https://github.com/samusesapple/SwiftUI-Tutorials/assets/126672733/ffbf0744-5468-4fd3-923f-dee268bd9fb2)
-
 <br>
 <br>
 <br>
@@ -122,4 +121,24 @@ SwiftUI에서의 Picker 사용법 및 이를 활용한 List Filter에 대해 학
 ---
 ![Simulator Screen Recording - iPhone 14 Pro - 2023-10-04 at 17 52 08](https://github.com/samusesapple/SwiftUI-Tutorials/assets/126672733/60279cf7-a4de-4b12-a51f-1f564204d540)
 ![Simulator Screen Recording - iPhone 14 Pro - 2023-10-04 at 18 49 47](https://github.com/samusesapple/SwiftUI-Tutorials/assets/126672733/bdae9887-ce16-4869-b8e2-44ccb756ec9c)
+<br>
+<br>
+<br>
+
+## 9. Deep Link
+### 배운 내용
+--- 
+URL을 확장하여 scheme와 host, pathComponents에 들어오는 UUID값에 해당되는 할일 리스트를 보여주는 앱 페이지 오픈 방법에 대한 학습. <br>
+NavigationView가 곧 Deprecated 될 예정으로, NavigationSplitView을 활용하여 List를 구성하는 방법 또한 학습하였다. <br>
+(Ref. https://developer.apple.com/documentation/swiftui/migrating-to-new-navigation-types) <br>
+![image](https://github.com/samusesapple/SwiftUI-Tutorials/assets/126672733/135e7755-bd44-4fb7-9790-b326de43ce08)
+![image](https://github.com/samusesapple/SwiftUI-Tutorials/assets/126672733/cb73ba49-2d0f-4aab-a506-469f2e09eba8)
+
+<br>
+<br> 
+
+### 구현 화면
+---
+![Simulator Screen Recording - iPhone 14 Pro - 2023-10-05 at 16 51 57](https://github.com/samusesapple/SwiftUI-Tutorials/assets/126672733/4f90b364-ae92-486a-a0dc-4fd957a1c80a)
+![Simulator Screen Recording - iPhone 14 Pro - 2023-10-05 at 16 52 40](https://github.com/samusesapple/SwiftUI-Tutorials/assets/126672733/34479960-39e9-473b-ad6b-150fd226a30f)
 
