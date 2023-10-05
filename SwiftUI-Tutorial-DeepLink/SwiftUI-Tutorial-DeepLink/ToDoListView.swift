@@ -35,7 +35,6 @@ struct ToDoListView: View {
     
     // MARK: - View
     var body: some View {
-        
         NavigationSplitView {
             List(todoList, id: \.self, selection: $selectedToDo) { todo in
                 NavigationLink(todo.title, value: todo)

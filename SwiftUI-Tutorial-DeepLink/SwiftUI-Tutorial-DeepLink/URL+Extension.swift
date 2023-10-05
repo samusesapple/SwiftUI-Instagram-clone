@@ -9,11 +9,12 @@ import Foundation
 
 extension URL {
     
+    /// scheme 일치 여부 return
     var isDeepLink: Bool {
         return scheme == "swiftui-tutorial-deeplink"
     }
     
-    // 어떤 탭이 선택되었는지 알려주는
+    /// host에 입력된 값에 따라 어떤 탭이 선택되었는지TabIdentifier 타입을 return
     var tabIdentifier: TabIdentifier? {
         guard isDeepLink else {
             return nil
@@ -29,7 +30,7 @@ extension URL {
         }
     }
     
-    // swiftui-tutorial-deeplink://todos/uuid  << uuid에
+    /// swiftui-tutorial-deeplink://todo/uuid  << 들어오는 uuid을 PageIdentifier타입에 담아서 return
     var todoDetailPage: PageIdentifier? {
         guard let tabIdentifier = tabIdentifier,
               pathComponents.count > 1,
@@ -45,5 +46,4 @@ extension URL {
             return nil
         }
     }
-
 }
