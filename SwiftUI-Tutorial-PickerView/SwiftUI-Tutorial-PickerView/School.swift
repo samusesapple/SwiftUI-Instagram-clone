@@ -8,6 +8,7 @@
 import Foundation
 
 enum School: String, CaseIterable {
+    case all = "전체"
     case elementary = "초등학교"
     case middle = "중학교"
     case high = "고등학교"

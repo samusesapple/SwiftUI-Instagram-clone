@@ -12,7 +12,9 @@ func getFriendList() -> [Friend] {
     
     for i in 0...20 {
         let newFriend = Friend(name: "친구 \(i)",
-                               school: School.allCases.randomElement() ?? .elementary)
+                               school: School.allCases.filter {
+            $0 != .all
+        }.randomElement() ?? .elementary)
         newFriendList.append(newFriend)
     }
     
@@ -21,7 +23,7 @@ func getFriendList() -> [Friend] {
 
 struct FriendList: View {
     
-    private var schoolList: [School] = [.elementary, .middle, .high]
+    private var schoolList: [School] = [.all, .elementary, .middle, .high]
     
     @State private var friendList: [Friend]
     
@@ -35,7 +37,10 @@ struct FriendList: View {
     // MARK: - View
     var body: some View {
         VStack {
-            Text("선택된 학교 필터: \(filteredValue.rawValue)")
+            Text(
+                filteredValue != .all ?
+                "선택된 학교: \(filteredValue.rawValue)" : "전체 학생"
+            )
             
             Picker("",
                    selection: $filteredValue) {
@@ -47,7 +52,14 @@ struct FriendList: View {
                    .padding()
             
             List {
-                ForEach(friendList.filter { $0.school == filteredValue }, id: \.self) { list in
+                ForEach(friendList.filter {
+                    if filteredValue != .all { // 전체가 아니라면 filteredValue에 해당되는 학생만 list에 표시
+                        return $0.school == filteredValue
+                    } else { // 전체가 맞다면 .name이 비어있지 않은 학생 표시 (모든 학생)
+                        return !$0.name.isEmpty
+                    }
+                },
+                        id: \.self) { list in
                     GeometryReader { proxy in
                         HStack {
                             Text(list.name)
