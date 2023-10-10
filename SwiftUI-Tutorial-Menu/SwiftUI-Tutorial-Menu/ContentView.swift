@@ -7,17 +7,6 @@
 
 import SwiftUI
 
-enum MyPet: String {
-    case pizza = "피자 🐈"
-    case munji = "먼지 😼"
-}
-enum MenuTab: String {
-    case main = "메인"
-    case createNewFile = "새 파일 만들기"
-    case createNewFolder = "새 폴더 만들기"
-    case deleteFiles = "파일 모두 삭제"
-}
-
 struct ContentView: View {
     
     private var pets: [MyPet] = [MyPet.pizza, MyPet.munji]

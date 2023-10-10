@@ -11,6 +11,8 @@
 		DD24FEDE2ACFB76900649D52 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD24FEDD2ACFB76900649D52 /* ContentView.swift */; };
 		DD24FEE02ACFB76A00649D52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD24FEDF2ACFB76A00649D52 /* Assets.xcassets */; };
 		DD24FEE32ACFB76A00649D52 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD24FEE22ACFB76A00649D52 /* Preview Assets.xcassets */; };
+		DDC845002AD4E7BA00219AB5 /* MyPet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC844FF2AD4E7BA00219AB5 /* MyPet.swift */; };
+		DDC845022AD4E7CD00219AB5 /* MenuTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC845012AD4E7CD00219AB5 /* MenuTab.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		DD24FEDD2ACFB76900649D52 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DD24FEDF2ACFB76A00649D52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD24FEE22ACFB76A00649D52 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DDC844FF2AD4E7BA00219AB5 /* MyPet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPet.swift; sourceTree = "<group>"; };
+		DDC845012AD4E7CD00219AB5 /* MenuTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTab.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				DD24FEDB2ACFB76900649D52 /* SwiftUI_Tutorial_MenuApp.swift */,
+				DDC845032AD4E7DF00219AB5 /* Models */,
 				DD24FEDD2ACFB76900649D52 /* ContentView.swift */,
 				DD24FEDF2ACFB76A00649D52 /* Assets.xcassets */,
 				DD24FEE12ACFB76A00649D52 /* Preview Content */,
@@ -65,6 +70,15 @@
 				DD24FEE22ACFB76A00649D52 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DDC845032AD4E7DF00219AB5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DDC845012AD4E7CD00219AB5 /* MenuTab.swift */,
+				DDC844FF2AD4E7BA00219AB5 /* MyPet.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +151,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDC845022AD4E7CD00219AB5 /* MenuTab.swift in Sources */,
 				DD24FEDE2ACFB76900649D52 /* ContentView.swift in Sources */,
 				DD24FEDC2ACFB76900649D52 /* SwiftUI_Tutorial_MenuApp.swift in Sources */,
+				DDC845002AD4E7BA00219AB5 /* MyPet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
