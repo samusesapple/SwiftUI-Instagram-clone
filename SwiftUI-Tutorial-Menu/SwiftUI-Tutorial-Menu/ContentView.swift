@@ -7,9 +7,12 @@
 
 import SwiftUI
 
+enum MyPet: String {
+    case pizza = "피자 🐈"
+    case munji = "먼지 😼"
+}
 enum MenuTab: String {
-    case pizza = "피자"
-    case cat = "고양이"
+    case main = "메인"
     case createNewFile = "새 파일 만들기"
     case createNewFolder = "새 폴더 만들기"
     case deleteFiles = "파일 모두 삭제"
@@ -17,8 +20,11 @@ enum MenuTab: String {
 
 struct ContentView: View {
     
+    private var pets: [MyPet] = [MyPet.pizza, MyPet.munji]
+    
     @State private var shouldShowAlert: Bool = false
-    @State private var selectedMenu: MenuTab = .cat
+    @State private var selectedMenu: MenuTab = .main
+    @State private var selectedPet: MyPet = .pizza
     
     private func setMenuActions(_ tappedMenu: MenuTab) {
         shouldShowAlert = true
@@ -32,21 +38,15 @@ struct ContentView: View {
             Text(selectedMenu.rawValue)
                 .font(.title)
                 .padding()
-                .navigationTitle("타이틀")
+                .navigationTitle(selectedPet.rawValue)
                 .toolbar {
                     ToolbarItem(placement: .navigationBarTrailing) {
                         Menu {
                             // 메뉴에 들어갈 내용 (선택 가능하도록 하고싶은 경우 button)
-                            Button {
-                                setMenuActions(.pizza)
-                            } label: {
-                                Label("피자", systemImage: "cat.fill")
-                            }
-                            
-                            Button {
-                                setMenuActions(.cat)
-                            } label: {
-                                Label("고얌미", systemImage: "cat.fill")
+                            Picker("내 동물 선택", selection: $selectedPet) {
+                                ForEach(pets, id: \.self) { pet in
+                                    Text(pet.rawValue)
+                                }
                             }
                             
                             Section {
@@ -71,7 +71,6 @@ struct ContentView: View {
                                 }
 
                             }
-
                         } label: {
                             Circle()
                                 .foregroundColor(.yellow)
@@ -82,7 +81,6 @@ struct ContentView: View {
                                         .font(.system(size: 20))
                                 }
                         }
-
                     }
                 }
                 .alert("얼럿 타이틀",
